@@ -1,0 +1,25 @@
+
+    <form class = "container"
+      [formGroup] = "amarform"
+      (ngsubmit)="onSubmit(amarform.value)">
+  <h1 > Form Practice</h1>
+  <br>
+     <input type ="text"  name  = "decimal" placeholder="decimal" 
+     formControlName= "dec" 
+     (ngModelChange)="decChanged(oldValue, newValue=$event)">
+  <br>
+     <input type ="text"  name  = "binary" placeholder="binary" 
+     formControlName= "bin" 
+     (ngModelChange)="binChanged(oldValue, newValue=$event)">
+  <br>
+     <input type ="text"  name  = "octal" placeholder="octal" 
+     formControlName= "oct" 
+     (ngModelChange)="octChanged(oldValue, newValue=$event)">
+  <br>
+     <input type ="text"  name  = "hexadecimal" placeholder="hexadecimal" 
+     formControlName= "hex" 
+     (ngModelChange)="hexChanged(oldValue, newValue=$event)">
+  <br>
+  <br>
+    </form>
+   

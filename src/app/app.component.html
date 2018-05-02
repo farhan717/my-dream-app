@@ -1,0 +1,70 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<!-- <a routerLink = "/member"> Member</a>
+<a routerLink = "/product"> Product</a>
+<br>
+
+<router-outlet></router-outlet>
+
+<H1>hello</H1>
+<ul *ngFor = "let i of obj">
+  <li  *ngIf = "i.roll%2 === 0 " >{{i.name}}->{{i.roll}}</li>
+</ul> -->
+
+
+<!-- <div class = "main">
+  <h1>A Small Project</h1>
+  <div class="addItem">
+      <input [(ngModel)]="newItem" placeholder="Add something here" class="addText">
+      <button (click)="pushItem()"> Add </button>
+
+  </div>
+  <ul>
+    <li *ngFor = "let i of listItems; let indx = index"> {{i}}
+    <span (click)="removeItem(indx)">x</span>
+  </li>
+  </ul>
+</div> -->
+
+
+<!-- <app-pipepractice>
+
+</app-pipepractice> -->
+
+<!-- <h1>{{arrayInApp| sort: 'asc'}}</h1>
+<br>
+
+<ul *ngFor = "let i of arrayInApp">
+  <li>{{i}}</li>
+  </ul>  -->
+<!--   
+<br>
+<h1>{{arrayInApp| sort: 'desc'}}</h1> -->
+
+
+<!-- <app-modelpractice></app-modelpractice> -->
+
+  <ul *ngIf="apps">
+    <li *ngFor="let app of apps">
+         {{app.id}}
+         {{app.name}}
+    </li>
+ </ul>
+
+<table border = "1" align = "center">
+  <tr>
+    <td>
+      ID
+    </td>
+    <td>
+      Name
+    </td>
+  </tr>
+<tr *ngFor="let app of apps">
+    <td>{{ app.id }}</td>
+    <td>{{ app.name }}</td>
+</tr>
+</table>
+
+ 

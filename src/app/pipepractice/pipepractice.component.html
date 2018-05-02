@@ -1,0 +1,66 @@
+<div align="center">
+<h2>{{name | uppercase}}</h2>
+<h2>{{name | lowercase}}</h2>
+</div>
+
+<!-- https://codecraft.tv/courses/angular/pipes/built-in-pipes/ -->
+
+<div>
+    <h4>Currency</h4>
+    <div>
+      <p ngNonBindable>{{ 1234.56 | currency:'CAD' }}</p>
+      <p>{{ 1234.56 | currency:"CAD" }}</p>
+  
+      <p ngNonBindable>{{ 1234.56 | currency:'CAD':'code' }}</p>
+      <p>{{ 1234.56 | currency:'CAD':'code'}}</p>
+  
+      <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol' }}</p>
+      <p>{{ 1234.56 | currency:'CAD':'symbol'}}</p>
+  
+      <p ngNonBindable>{{ 1234.56 | currency:'CAD':'symbol-narrow' }}</p>
+      <p>{{ 1234.56 | currency:'CAD':'symbol-narrow'}}</p>
+    </div>
+  </div>
+
+  <div >
+      <h4 >Date</h4>
+      <div >
+        <p>{{ day | date}}</p>
+        <p ngNonBindable>{{ day | date: 'shortTime' }}</p> 
+        <p>{{ day | date: 'shortTime' }}</p>
+    
+        <p ngNonBindable>{{ day | date:'fullDate' }}</p>
+        <p>{{ day | date: 'fullDate' }}</p>
+    
+        <p ngNonBindable>{{ day | date: 'd/M/y' }}</p>
+        <p>{{ day | date: 'd/M/y' }}</p>
+      </div>
+    </div>
+
+
+    <div >
+        <div >
+          <h4 >DecimalPipe</h4>
+          <p ngNonBindable>{{ 3.14159265 | number: '3.1-2' }}</p>
+          <p>{{ 3.14159265 | number: '3.1-2' }}</p>
+      
+          <p ngNonBindable>{{ 3.14159265 | number: '1.4-4' }}</p>
+          <p>{{ 3.14159265 | number: '1.4-4' }}</p>
+        </div>
+      </div>
+
+      <div >
+          <h4>JsonPipe</h4>
+          <div>
+            <p ngNonBindable>{{ jsonVal }}</p> 
+            <p>{{ jsonVal }}</p>
+        
+            <p ngNonBindable>{{ jsonVal | json }}</p>
+            <p>{{ jsonVal | json | uppercase}}</p>
+
+            <p>{{jsonVal.moo}}</p>
+          </div>
+        </div>
+
+        <!-- <h1>  {{arr| sort: 'asc' }}</h1>
+        <h1>  {{arr| sort: 'desc' }}</h1> -->
