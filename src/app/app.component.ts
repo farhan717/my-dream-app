@@ -47,7 +47,7 @@ export class AppComponent {
   //constructor(private newservice: MyDataService, private anothernewservice: MyHttpService){};
 
   public apps: JSON[]=[];
-  found = "bhalo";
+  found = "Motamoti";
 
   constructor(http: Http) {
     http.get('data/students.json')
